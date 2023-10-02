@@ -118,48 +118,52 @@
   <!-- projects -->
 
 
-  <!-- Project Showcase -->
-  <section class="ds-testimonials-section">
-    <div class="container">
-      <h2><span>Project Showcase</span></h2>
-      <div class="ds-testimonials-slider" id="testimonials-slider"></div>
+ <!-- Project Showcase Section -->
+<section class="ds-testimonials-section">
+  <div class="container">
+    <h2><span>Project Showcase</span></h2>
+    <div class="ds-testimonials-slider" id="project-showcase-slider">
+      <!-- Testimonial items will be dynamically added here -->
     </div>
-  </section>
-  <!-- Project Showcase -->
+  </div>
+</section>
+<!-- Project Showcase Section -->
+
 
 <!-- Your existing HTML content above this line -->
 
 <script>
-  // Array of image URLs
-  const testimonialImages = [
-    'projects-1.png',
-    'nn1.png',
-    'projects-2.png',
-    'practices1.png',
-    'process-2.png',
-    // Add more image URLs as needed
-  ];
+ // Array of image URLs
+const projectImages = [
+  'projects-1.png',
+  'nn1.png',
+  'projects-2.png',
+  'practices1.png',
+  'process-2.png',
+  // Add more image URLs as needed
+];
 
-  // Get the testimonials-slider element
-  const testimonialsSlider = document.getElementById('testimonials-slider');
+// Get the project-showcase-slider element
+const projectShowcaseSlider = document.getElementById('project-showcase-slider');
 
-  // Loop through the image URLs and create image elements
-  testimonialImages.forEach(imageUrl => {
-    // Create a new div for each image
-    const testimonialLoop = document.createElement('div');
-    testimonialLoop.classList.add('ds-testimonials-loop');
+// Loop through the image URLs and create image elements
+projectImages.forEach(imageUrl => {
+  // Create a new div for each image
+  const projectLoop = document.createElement('div');
+  projectLoop.classList.add('ds-testimonials-loop');
 
-    // Create an img element
-    const imageElement = document.createElement('img');
-    imageElement.src = imageUrl;
-    imageElement.alt = 'Testimonial Image';
+  // Create an img element
+  const imageElement = document.createElement('img');
+  imageElement.src = imageUrl;
+  imageElement.alt = 'Project Image';
 
-    // Append the image to the div
-    testimonialLoop.appendChild(imageElement);
+  // Append the image to the div
+  projectLoop.appendChild(imageElement);
 
-    // Append the div to the testimonials-slider
-    testimonialsSlider.appendChild(testimonialLoop);
-  });
+  // Append the div to the project-showcase-slider
+  projectShowcaseSlider.appendChild(projectLoop);
+});
+
 </script>
 
 <!-- Your existing JavaScript and closing body and html tags below this line -->
