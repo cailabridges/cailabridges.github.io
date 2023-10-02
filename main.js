@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 
-   if ($('.ds-testimonials-section').length) {
-		$('.ds-testimonials-slider').slick({
+   if ($('.ds-project-showcase-section').length) {
+		$('.ds-project-showcase-slider').slick({
 		  	infinite: true,
 		  	arrows: true,
 		  	autoplay: true,
