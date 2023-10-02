@@ -379,6 +379,11 @@ img {
 	font-weight: 600
 }
 
+.ds-project-showcase-slider div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .ds-project-showcase-slider div img {
   max-width: 50%; /* Ensures the image does not exceed the width of its parent container */
   max-height: 50%; /* Ensures the image does not exceed the height of its parent container */
