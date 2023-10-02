@@ -556,19 +556,23 @@ img {
 
 /* End of CSS for Code Examples Section */
 
-#testimonials-slider {
-  display: flex;
-  overflow: hidden;
-  width: 100%; /* Set the width to accommodate all images */
+/* CSS for Project Showcase Section */
+#project-showcase-slider {
+  /* Add your styles for the container holding the project images */
 }
 
-#testimonials-slider img {
-  width: 100%; /* Ensure images take up 100% of the container width */
+.ds-testimonials-loop {
+  /* Styles for individual project items */
+}
+
+.ds-testimonials-loop img {
+  /* Styles for the project images */
+  max-width: 100%; /* Ensure images don't exceed their container */
   height: auto; /* Maintain aspect ratio */
 }
 
-/* Add additional styles as needed */
-
+/* Add more specific styles as needed for your project showcase section */
+/* End of CSS for Project Showcase Section */
 
 
 /*-------------------------------------------------------------------------------
