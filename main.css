@@ -380,8 +380,8 @@ img {
 }
 
 .ds-project-showcase-slider div img {
-  max-width: 100%; /* Ensures the image does not exceed the width of its parent container */
-  max-height: 100%; /* Ensures the image does not exceed the height of its parent container */
+  max-width: 50%; /* Ensures the image does not exceed the width of its parent container */
+  max-height: 50%; /* Ensures the image does not exceed the height of its parent container */
   width: auto; /* Allows the image to resize proportionally based on its width */
   height: auto; /* Allows the image to resize proportionally based on its height */
 }
