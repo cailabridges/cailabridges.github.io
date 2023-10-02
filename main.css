@@ -556,23 +556,27 @@ img {
 
 /* End of CSS for Code Examples Section */
 
-/* CSS for Project Showcase Section */
-#project-showcase-slider {
-  /* Add your styles for the container holding the project images */
-}
+<style>
+  .ds-testimonials-section {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
 
-.ds-testimonials-loop {
-  /* Styles for individual project items */
-}
+  .ds-testimonials-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
 
-.ds-testimonials-loop img {
-  /* Styles for the project images */
-  max-width: 100%; /* Ensure images don't exceed their container */
-  height: auto; /* Maintain aspect ratio */
-}
+  .ds-testimonials-loop {
+    flex: 0 0 100%;
+  }
 
-/* Add more specific styles as needed for your project showcase section */
-/* End of CSS for Project Showcase Section */
+  .ds-testimonials-loop img {
+    width: 100%;
+    height: auto;
+  }
+</style>
 
 
 /*-------------------------------------------------------------------------------
