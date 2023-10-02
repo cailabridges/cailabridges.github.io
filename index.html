@@ -128,46 +128,6 @@
   </div>
 </section>
 <!-- Project Showcase Section -->
-
-
-<!-- Your existing HTML content above this line -->
-
-<script>
- // Array of image URLs
-const projectImages = [
-  'projects-1.png',
-  'nn1.png',
-  'projects-2.png',
-  'practices1.png',
-  'process-2.png',
-  // Add more image URLs as needed
-];
-
-// Get the project-showcase-slider element
-const projectShowcaseSlider = document.getElementById('project-showcase-slider');
-
-// Loop through the image URLs and create image elements
-projectImages.forEach(imageUrl => {
-  // Create a new div for each image
-  const projectLoop = document.createElement('div');
-  projectLoop.classList.add('ds-testimonials-loop');
-
-  // Create an img element
-  const imageElement = document.createElement('img');
-  imageElement.src = imageUrl;
-  imageElement.alt = 'Project Image';
-
-  // Append the image to the div
-  projectLoop.appendChild(imageElement);
-
-  // Append the div to the project-showcase-slider
-  projectShowcaseSlider.appendChild(projectLoop);
-});
-
-</script>
-
-<!-- Your existing JavaScript and closing body and html tags below this line -->
-
   
 
   <section class="ds-email-section">
