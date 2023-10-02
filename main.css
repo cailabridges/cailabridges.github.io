@@ -556,6 +556,19 @@ img {
 
 /* End of CSS for Code Examples Section */
 
+#testimonials-slider {
+  display: flex;
+  overflow: hidden;
+  width: 100%; /* Set the width to accommodate all images */
+}
+
+#testimonials-slider img {
+  width: 100%; /* Ensure images take up 100% of the container width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Add additional styles as needed */
+
 
 
 /*-------------------------------------------------------------------------------
