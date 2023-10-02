@@ -44,3 +44,34 @@ projectImages.forEach((imageUrl) => {
   projectLoop.appendChild(imageElement);
   projectShowcaseSlider.appendChild(projectLoop);
 });
+
+// Stick slider
+$(document).ready(function(){
+  $('#project-showcase-slider').slick({
+    // Slick Slider options (if needed)
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000, // Change slide every 3 seconds
+    arrows: true,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+});
+
+
