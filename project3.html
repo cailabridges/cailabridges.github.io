@@ -80,13 +80,13 @@
             </div>
             <div class="row ds-process-images">
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                    <img src="process-1.png" class="" alt="Process Step 1">
+                    <img src="project 3 images/process-1.png" class="" alt="Process Step 1">
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                    <img src="process-2.png" class="" alt="Process Step 2">
+                    <img src="project 3 images/process-2.png" class="" alt="Process Step 2">
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                    <img src="process-3.png" class="" alt="Process Step 3">
+                    <img src="project 3 images/process-3.png" class="" alt="Process Step 3">
                 </div>
             </div>
         </div>
@@ -127,24 +127,27 @@
                         <h2>Example 1: HTML and CSS</h2>
                         <p>Here's an example of a HTML and CSS code snippet for the timeline navigation:</p>
                         <pre><code class="html">
-                            &lt;div onclick="application.goToTargetView(event)" id="Timeline_Nav" class="Timeline_Nav"&gt;
-                            &lt;a href="Earthquake.html"&gt;
-                                &lt;div id="Group_1"&gt;
-                                    &lt;div id="n__ba"&gt;
-                                        &lt;span&gt;Χρονολόγιο &lt;/span&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-                                
-                                &lt;div id="Timeline"&gt;
-                                    &lt;span&gt;Timeline&lt;/span&gt;
-                                &lt;/div&gt;
-                                &lt;svg class="Rectangle_2"&gt;
-                                    &lt;rect id="Rectangle_2" rx="0" ry="0" x="0" y="0" width="25.174" height="1.027"&gt;
-                                    &lt;/rect&gt;
-                                &lt;/svg&gt;
-                            &lt;/a&gt;
-                        &lt;/div&gt;
-                    </code></pre>
+                         
+      export const register = (req, res) => {
+        const q = "SELECT * FROM users WHERE username = ? OR email = ?";
+        db.query(q, [req.body.username, req.body.email], (err, data) => {
+          if (err) return res.json(err);
+          if (data.length) return res.status(409).json("User already exists!");
+
+          // Hash password
+          const salt = bcrypt.genSaltSync(10);
+          const hash = bcrypt.hashSync(req.body.password, salt);
+
+          const q = "INSERT INTO users (`username`, `email`, `password`) VALUES (?, ?, ?)";
+          const values = [req.body.username, req.body.email, hash];
+
+          db.query(q, values, (err, data) => {
+            if (err) return res.json(err);
+            return res.status(200).json("User has been created.");
+          });
+        });
+      };
+    </code></pre>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
