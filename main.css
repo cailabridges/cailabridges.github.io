@@ -298,6 +298,8 @@ img {
 .ds-projects-loop figure {
 	margin-right: 60px;
 	position: relative;
+	width: 100%;
+  height: 200px;
 }
 
 .ds-projects-loop:hover figure img.ds-image-shadow {
